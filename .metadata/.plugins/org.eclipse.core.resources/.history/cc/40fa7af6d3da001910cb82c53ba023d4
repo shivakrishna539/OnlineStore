@@ -1,0 +1,9 @@
+server.port = 8888
+## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring.datasource.url=jdbc:postgresql://localhost:5432/store
+spring.datasource.username= postgres
+spring.datasource.password=shiva
+spring.jpa.hibernate.ddl-auto=update
+
+# The SQL dialect makes Hibernate generate better SQL for the chosen database
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect

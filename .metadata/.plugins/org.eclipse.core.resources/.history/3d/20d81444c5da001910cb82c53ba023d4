@@ -1,0 +1,5 @@
+server.port = 8888
+## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring.datasource.url=jdbc:postgresql://localhost:49280/postgres
+spring.datasource.username= postgres
+spring.datasource.password=shiva

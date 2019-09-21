@@ -1,0 +1,44 @@
+package com.example.vsh.Model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class BiscuitModel {
+
+	@Id
+    @GeneratedValue
+    private long id;
+	
+	@Column
+    private String companyName;
+	
+	@Column
+    private int quantity;
+	
+	@Column
+    private String biscuitType;
+	
+	@Column
+    private float costPrice;
+	
+	@Column
+    private float salePrice;
+	
+	@Column
+    private float totalCost;
+	
+	@Column
+    private float totalSale;
+	
+	@Column
+    private float totalProfit;
+	
+	@Column
+    private String barCode;;
+	
+	
+
+}

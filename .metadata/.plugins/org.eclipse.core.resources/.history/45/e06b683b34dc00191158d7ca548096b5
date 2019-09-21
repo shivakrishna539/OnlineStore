@@ -1,0 +1,7 @@
+package com.example.vsh.dao;
+
+import com.example.vsh.Model.BiscuitModel;
+
+public interface BiscuitDao {
+     public BiscuitModel stockInsert(BiscuitModel bm);
+}

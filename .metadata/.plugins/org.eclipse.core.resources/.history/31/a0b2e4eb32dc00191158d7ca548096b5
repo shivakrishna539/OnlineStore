@@ -1,0 +1,16 @@
+package com.example.vsh.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.vsh.Model.BiscuitModel;
+import com.example.vsh.Repository.Biscuit;
+
+public class BicuitDaoImpl implements BiscuitDao{
+	
+	@Autowired
+	Biscuit bis;
+	
+	public void stockInsert(BiscuitModel bm) {
+	    	
+	}
+}
