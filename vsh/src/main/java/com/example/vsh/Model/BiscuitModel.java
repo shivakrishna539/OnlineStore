@@ -4,6 +4,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class BiscuitModel {
@@ -36,6 +39,18 @@ public class BiscuitModel {
 	@Column
     private float totalProfit;
 	
+	@OneToOne
+    private SalesModel salesModel;
+	
+	public SalesModel getSalesModel() {
+		return salesModel;
+	}
+
+	public void setSalesModel(SalesModel salesModel) {
+		this.salesModel = salesModel;
+	}
+
+	@JsonIgnore
 	@Column
     private String barCode;
 
@@ -46,7 +61,7 @@ public class BiscuitModel {
 	public void setId(long id) {
 		this.id = id;
 	}
-
+	
 	public String getCompanyName() {
 		return companyName;
 	}
